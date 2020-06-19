@@ -13,8 +13,7 @@
 + Generator 异步方案、Async/ Await 语法糖
 
 ### promise 基本用法
-
-```#JavaScript异步编程
+#JavaScript异步编程
 
 ### 内容概要：
 
@@ -47,6 +46,7 @@ promise.then(value => {
 
 console.log('end')
 
+```
 ```
 
 const promise = new Promise((resolve, reject) => {
