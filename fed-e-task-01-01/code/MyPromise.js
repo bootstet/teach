@@ -104,6 +104,8 @@ class myPromise {
           setTimeout(() => {
             try {
               let x = failCallback(this.reason)
+
+              console.log(aaa)
               // 判断 x 的值是普通值还是promise对象
               // 如果是普通值  直接调用resolve
               // 如果是promise对象  查看promise对象返回的结果
