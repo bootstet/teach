@@ -21,7 +21,7 @@
 var tmp = 123;
 
 if(true) {
-  // console.log(tmp)
+  console.log(tmp)
   let tmp
 }
 
