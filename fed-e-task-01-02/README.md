@@ -19,7 +19,7 @@ if(true) {
   let tmp
 }
 ```
-报错 tpm is noe defined  在if下面的块级作用域中，会先在此作用域中将tmp进行变量提升
+报错 tpm is not defined  在if下面的块级作用域中，会先在此作用域中将tmp进行变量提升
 但是在es6中，let声明的tmp提升到块顶部，但是还没有进行赋值操作，会报错
 
 #### 3 结合ES6新语法，用最简单的方式找出数组中的最小值
