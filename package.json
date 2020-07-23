@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/bootstet/teach#readme",
   "dependencies": {
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "webpack": "^4.43.0",
+    "webpack-merge": "^5.0.9"
   }
 }
