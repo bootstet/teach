@@ -27,6 +27,8 @@ if(true) {
 var arr = [12, 34, 32, 89, 4]
 // 答案
 let mix = Math.min(...arr)
+arr.sort((a, b) => a-b)[0]
+arr.reduce((min, num) => min<num?min: num)
 console.log(mix)  // 4
 ```
 
