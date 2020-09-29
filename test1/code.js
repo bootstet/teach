@@ -158,6 +158,36 @@ console.log('result2', getCount())
   devServer: 开发模式的一些配置，如代码配置
   module: 打包模块文件，例如一些js css png 字体 的一些加载模块
 
- * 
+  *****16. 阐述 webpack css-loader 的作用 和 原理？ （跟谁学）
+  css-loader 将css 文件转换为js模块,在bundle.js文件中，将css模块push到一个css-loader模块内部提供的数组中，
+  将cssloader通过style-loader加载引入css-loader通过style标签插入到html中
+  insertStyleElement使用document.creatElement('style')挂载到html中。
+  
+  *****17. webpack中loader和plugin的区别是什么 （字节跳动 搜狐）
+  loader 实现模块中资源模块的加载，实现整体项目的打包
+  plugin 增强webpack在项目中的自动化能力，解决项目中除了资源模块加载以外的自动化工作，如
+  清除dist文件的内容，拷贝不需要打包的文件至输出目录，压缩输出代码
+
+  *****18. webpack、rollup、parcel 它们的优劣？
+  + rollup小巧很多，rollup是一款esmodule打包器，没有其他额外功能，高效的esmodule打包器，输出结果更加扁平，自动移除未引用代码，打包结果依然完全可读。加载非esm模块比较复杂，无法热替换，依赖AMD库
+  + wabpack 功能更加齐全，大二全。比如热替换
+  + parcel 傻瓜式使用体验，前端打包器，零配置，
+
+  *****19. babel.config.js 和 .babelrc 有什么区别？
+  babel.config.js是放在项目跟目录，一个项目中只能有一个
+  .babelrc 针对文件夹的，配置文件所在的文件夹包括子文件夹都会应用次配置，下层的配置会覆盖上层配置文件
+
+  *****20. webpack 中 tree shaking 的用途和原理是什么？
+  删除项目中未引用的代码，减少打包后文件的大小
+
+  *****21. 阐述一下 eventbus 的原理，讲述eventbus在vue中的实践 （猿辅导）
+  将不同组件的共享状态抽取出来，存在一个全局对象中，使用的时候保证它是相应式的，
+  任何组件都可以修改和使用全局中的状态 
+  使用自定义事件的方式，用于不同组件之间的传值，emit触发自定义之间的传值，通过中介来处理方式不同组件之间的传值通信。
+
+  *****22. vue-loader 的实现原理是什么 
+
+
+ *
  */
 
