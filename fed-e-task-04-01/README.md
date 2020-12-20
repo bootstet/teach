@@ -19,7 +19,9 @@
 
 ## 4. 请简述 workInProgress Fiber 树存在的意义是什么
 
-
+ + 构建root fiber，以及每一个元素的fiber对象
+ + 给root 对象添加finishedWord属性，存储render阶段的工作成果（待提交的fiber对象）
+ + 创建 workInProgress Fiber树中的 rootFiber
 
 
 
